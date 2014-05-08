@@ -26,7 +26,7 @@ if ($b <= $c) {
 
 if ($b == $c) {
     // output the appropriate result
-    echo "$b is equal $c\n";
+    echo "$b is the same value $c\n";
 }
 
 if ($b === $c) {
