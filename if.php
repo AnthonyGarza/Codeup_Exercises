@@ -9,7 +9,7 @@ if ($a < $b) {
     // output the appropriate result
     echo "$a is less than $b\n";
 } else {
-    echo "$a is greater than$b\n";
+    echo "$a is greater than $b\n";
 }
 
 if ($b > $a) {
