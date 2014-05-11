@@ -1,10 +1,10 @@
 <?php
 
-$test = 0;
+$test = 100;
 
-while ($test <= 100) {
+while ($test >= -10) {
     echo $test . PHP_EOL;
-    $test = $test + 2;
+    $test = $test - 5;
 }
 
 ?>
