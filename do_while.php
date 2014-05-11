@@ -1,10 +1,10 @@
 <?php
 
-$test = 100;
+$a = 2;
 
-while ($test >= -10) {
-    echo $test . PHP_EOL;
-    $test = $test - 5;
+while ($a <= 1000000) {
+    echo $a . PHP_EOL;
+    $a = $a * $a;
 }
 
 ?>
