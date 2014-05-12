@@ -1,10 +1,10 @@
 <?php
 
-$a = 2;
+$a = 0;
 
-while ($a <= 1000000) {
+do {
     echo $a . PHP_EOL;
-    $a = $a * $a;
-}
+    $a = $a + 2;
+} while ($a <= 100);
 
 ?>
