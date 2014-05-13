@@ -5,8 +5,8 @@
 // and for the multiples of five print “Buzz”. For numbers which 
 // are multiples of both three and five print “FizzBuzz”.
 
-for ($a = 0; $a <= 100; $a++) {
-	if (($a % 5 == 0)&&($a % 3 == 0)) {
+for ($a = 1; $a <= 100; $a++) {
+	if (($a % 5 == 0) && ($a % 3 == 0)) {
 		echo "FizzBuzz" . PHP_EOL;
 	}	
 	elseif ($a % 5 == 0) {
