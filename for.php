@@ -8,10 +8,16 @@ fwrite(STDOUT, 'Give me a ending number? ');
 
 $end_num = trim(fgets(STDIN));
 
-// prompt user to choos count increment
+// prompt user to choose count increment
+// default to 1 if no input
+
 fwrite(STDOUT, 'Give me a number to  increment by? ');
 
 $incrementer = trim(fgets(STDIN));
+
+if ($incrementer == '') {
+	$incrementer = 1;
+}
 
 // for loop
 
