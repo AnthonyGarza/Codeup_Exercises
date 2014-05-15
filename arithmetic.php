@@ -6,6 +6,7 @@ function add($a, $b) {
     	echo $a + $b . PHP_EOL;
     } else {
     	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    	echo 'Value inputed for $a is ' . $a .' and $b is ' . $b . PHP_EOL;
     }
 }
 
@@ -47,7 +48,7 @@ function modulus($a, $b) {
     }
 }
 
-divide(4,0);
+add(tim, 2);
 
 
 ?>
