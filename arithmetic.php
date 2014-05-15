@@ -16,4 +16,9 @@ function divide($a, $b) {
     echo $a / $b . PHP_EOL;
 }
 
+add(10, 15);
+subtract(10, 15);
+multiply(6,7);
+divide(42,8);
+
 ?>
