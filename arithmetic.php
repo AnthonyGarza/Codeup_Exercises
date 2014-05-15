@@ -1,12 +1,16 @@
 <?php
 
+function error($a, $b) {
+	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    echo "Value inputed for $a is \$a and $b is \$b" . PHP_EOL;
+}
+
 function add($a, $b) {
 	// validate that values are numeric and display error if not
     if (is_numeric($a) && is_numeric($b)) {
     	echo $a + $b . PHP_EOL;
     } else {
-    	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
-    	echo 'Value inputed for $a is ' . $a .' and $b is ' . $b . PHP_EOL;
+    	error($a, $b);
     }
 }
 
@@ -15,7 +19,7 @@ function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
         echo $a - $b . PHP_EOL;
     } else {
-    	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    	error($a, $b);
     }
 }
 
@@ -24,7 +28,7 @@ function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
         echo $a * $b . PHP_EOL;
     } else {
-    	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    	error($a, $b);
     }
 }
 
@@ -35,7 +39,7 @@ function divide($a, $b) {
     } elseif (is_numeric($a) && is_numeric($b)) {
         echo $a / $b . PHP_EOL;
     } else {
-    	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    	error($a, $b);
     }
 }
 
@@ -44,11 +48,11 @@ function modulus($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
 	echo $a % $b . PHP_EOL;
 	} else {
-    	echo 'ERROR: Both $a and $b should be numbers!' . PHP_EOL;
+    	error($a, $b);
     }
 }
 
-add(tim, 2);
+divide(4, 0);
 
 
 ?>
