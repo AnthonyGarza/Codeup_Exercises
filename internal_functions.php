@@ -28,12 +28,8 @@ setCheck($array);
 $serial = serialize($array);
 echo $serial .PHP_EOL;
 
-// Unserialize the array $array, and output the results
-
-// TEST: If var $nothing is set, display '$nothing is SET'
-
-// TEST: If var $nothing is empty, display '$nothing is EMPTY'
-
-// TEST: If var $something is set, display '$something is SET'
+$clone = unserialize($serial);
+var_dump($clone) . PHP_EOL;
+print_r($clone) . PHP_EOL;
 
 ?>
