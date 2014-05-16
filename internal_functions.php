@@ -13,15 +13,19 @@ function setCheck($var) {
 	}
 }
 
-setCheck($array);
-
 // TEST: If var $nothing is set, display '$nothing is SET'
 
 // TEST: If var $nothing is empty, display '$nothing is EMPTY'
 
 // TEST: If var $something is set, display '$something is SET'
 
+setCheck($nothing);
+setCheck($something);
+setCheck($array);
+
 // Serialize the array $array, and output the results
+
+
 
 // Unserialize the array $array, and output the results
 
