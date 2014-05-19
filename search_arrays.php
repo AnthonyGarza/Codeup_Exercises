@@ -9,40 +9,29 @@ $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
 // Create a function that returns TRUE or FALSE if an array value is found. Search for Tina and Bob in $names
 
-$query = 'Bob';
+$query = 'Tina';
 
 function array_has_value($query, $names)
 {
-	if (array_search($query, $names) !== FALSE) {
-		return 'TRUE';
+	// if (array_search($query, $names) !== FALSE) {
+	// 	return 'TRUE';
+	// } else {
+	// 	return 'FALSE';
+	// }
+
+	if (array_search($query, $names) === false)
+	{
+		return false;
 	} else {
-		return 'FALSE';
+		return true;
 	}
 }
 
+var_dump(array_has_value($query, $names));
 
+// $result = array_has_value($query, $names);
 
-
-
-//var_dump(array_has_value($query, $names));
-
-// {
-// 	if (array_search($query, $names) !== FALSE) {
-// 		return 'TRUE';
-// 	} else {
-// 		return 'FALSE';
-// 	}
-// }
-
-
-
-
-
-
-
-$result = array_has_value($query, $names);
-
-echo $query . ' is ' . $result . PHP_EOL;
+// echo $query . ' is ' . $result . PHP_EOL;
 
 
 
