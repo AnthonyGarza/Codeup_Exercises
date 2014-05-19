@@ -27,25 +27,27 @@ function array_has_value($query, $names)
 	}
 }
 
-var_dump(array_has_value($query, $names));
+// var_dump(array_has_value('Bob', $names));
 
 // $result = array_has_value($query, $names);
 
 // echo $query . ' is ' . $result . PHP_EOL;
 
-
-
 // Create a function to compare 2 arrays that returns the number of values in common between the arrays.
 // Use the 2 example arrays and make sure your solution uses array_search()
+function array_common_count($array1, $array2)
+{
+	$count = 0;
+	foreach ($array1 as $value) {
+		if (array_has_value($value, $array2)) {
+			$count++;
+		}
+	}
 
+	return $count;
+}
 
-
-
-
-
-
-
-
+var_dump(array_common_count($names, $compare));
 
 
 
