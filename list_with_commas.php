@@ -12,6 +12,7 @@ $physicists_array = explode(', ', $physicists_string);
 
 // Converts array into list n1, n2, ..., and n3
 function humanized_list($array) {
+	asort($array);
 	return implode(', ', $array);
 }
 
