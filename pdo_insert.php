@@ -8,4 +8,16 @@ $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 echo $dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . "\n";
 
+// Create the query and assign to var
+$query = 'CREATE TABLE national_parks (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(240) NOT NULL,
+    location VARCHAR(50) NOT NULL,
+    date_established DATE NOT NULL,
+    area_in_acres DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY (id)
+)';
+
+$dbc->exec($query);
+
 ?>
